@@ -1,0 +1,82 @@
+.reviews {
+  margin: 0;
+  padding: 20rem 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.grid {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+
+    .box {
+        position: relative;
+        padding: 40px;
+        transition: 0.5s;
+        text-align: center;
+        background-color: white;
+        h4 {
+            margin: 20px 0 0;
+            padding: 0;
+            transition: 0.5s;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+        p {
+        margin: 0;
+        padding: 0;
+        transition: 0.5s;
+        font-size: 1.6rem;
+        }
+        
+        }
+    .box:before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 80px;
+        height: 80px;
+        background: url(/icons/quotes.png);
+        background-size: cover;
+        opacity: 0.05;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    .box:after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+        width: 80px;
+        height: 80px;
+        background: url(/icons/quotes.png);
+        background-size: cover;
+        opacity: 0.05;
+        pointer-events: none;
+        transition: 0.5s;
+        transform: rotate(180deg) translateY(0px);
+    }
+    .box:hover {
+        background: turquoise;
+    }
+}
+  .grid {
+    .box:hover::before {
+        transform: translateY(-20px);
+        opacity: 1;
+      }
+    .box:hover:after {
+        transform: rotate(180deg) translateY(-20px);
+        opacity: 1;  
+    }
+  }

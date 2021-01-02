@@ -1,0 +1,14 @@
+.gallery {
+    margin: 6rem auto;
+    text-align: center;
+    img {
+        width: 20%;
+        padding: 5px;
+        border: #fff solid 0.3em;
+        transition: 1s;
+        margin: 3rem;
+  }
+   img:hover {
+    transform: scale(1.1);
+  }
+}

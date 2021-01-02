@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skin Wax Glow">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="./icons/logo.svg">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/hamburgers.min.css">
+    <title>Contact</title>
+</head>
+<body>
+  <header class="main-head mobile">
+    <div class="logo mobile">
+        <img src="./img/logo.jpg" alt="logo">
+        <h1>Skin Wax Glow Studio</h1>
+    </div>
+    <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+</header>
+    <header class="main-head">
+        <nav>
+            <div class="logo main">
+                <img src="/img/logo.jpg" alt="logo">
+                <h1>Skin Wax Glow Studio</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./extra/gallery.html">Gallery</a></li>
+                <li><a href="./extra/reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+   <section class="contact-body">
+       <header class="contact-head">
+           <h2>Contact</h2>
+       </header>
+       <div class="contact-opacity-box">
+           <h1>Skin Wax Glow Studio | Chattanooga, TN </h1>
+           <div class="ribbon">
+               <p>To Schedule an Appointment Call 706.980.1015 </p>
+            </div>
+            <h1>255 Northgate Mall Suite 19 Chattanooga, TN 37415</h1>
+            <h1>HOURS</h1>
+         <div class="hour">
+             <ul>
+                 <li>Only Available on Mondays: 8am-8pm</li>
+             </ul>
+           </div>
+           <div class="ribbon">
+               <p>Call for a free consultation or click Book Now</p>
+           </div>
+           <div class="bookNow">
+           <a href="https://square.site/appointments/book/0VQDVM2X7SR9Q/skin-wax-glow-studio-chattanooga-tn">BOOK NOW</a>
+           </div>
+       </div>
+   </section>
+    </section>
+    <footer>
+        <h4>Skin Wax Glow Studio &copy; 2020 </h4>
+      <ul>
+          <li><a href="/index.html"><img src="./icons/home 1.svg" alt="home-link"></a></li>
+          <li><a href="https://www.facebook.com/skinwaxglow/"><img src="./icons/facebook.svg" alt="facebook-link"></a></li>
+          <li><a href="https://www.instagram.com/skinwaxglowstudio"><img src="./icons/instagram.svg" alt="instagram-link"></a></li>
+      </ul>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        function initMap() {
+          var location = { lat: 35.13067605479078, lng: -85.2394255937876 };
+          var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: location
+          });
+          var marker = new google.maps.Marker({
+            position: location,
+            map: map
+          });
+        }
+      </script>
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw9YYxUahLu55vKo5nMgZhdntChW7sIKI&callback=initMap"
+      ></script>
+</body>
+</html>

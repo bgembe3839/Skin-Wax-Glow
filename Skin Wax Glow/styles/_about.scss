@@ -1,0 +1,84 @@
+.about-page {
+    padding: 10rem 0;
+    text-align: center;
+    h3 {
+        padding-bottom: 5rem;
+        font-weight: bold;
+    }
+}
+.about-mid {
+    @include flex (center, center, row);
+    flex-wrap: wrap; 
+    margin: 10rem auto;
+}
+.about-mid-left {
+    background: url(/img/about-mid-left.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 15rem;
+    border: white .5rem solid;
+}
+.about-mid-right {
+    background: url(/img/about-mid-right.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: white .5rem solid;
+    padding: 15rem;
+}
+.about-info {
+    margin-bottom: 10rem;
+}
+.about-info-container {
+    @include flex(center, center, row);
+    width: 70%;
+    margin: auto;
+    padding: 2rem;
+    box-shadow: 0 1px 4px 0 #888;
+    background: white;
+}
+.about-info-left {
+    flex: 1 1 40rem;
+    img {
+        width: 80%;
+    }
+}
+.about-info-right {
+    flex: 1 1 40rem;
+    p {
+        margin: 1rem auto;
+        width: 90%;
+        text-align: left;
+        line-height: 3rem;
+    }
+}
+.opacity-info {
+    text-align: center;
+    background: rgba(50,50,50,.6);
+    margin: auto;
+    width: 30%;
+    padding: 5rem;
+    border-radius: 25px;
+
+    h1 {
+        border-bottom: 1px solid black;
+        margin: 0 auto 2rem;
+        width: 80%;
+
+
+    }
+    ul {
+        padding: 2rem 0;
+    }
+    li {
+        padding: 1rem 0;
+        font-size: 1.8rem;
+        color: white;
+    }
+}
+.about-bottom {
+    padding: 10rem 0;
+    img {
+        width: 30%;
+        box-shadow: 1px 11px 15px 1px #888;
+    }
+}

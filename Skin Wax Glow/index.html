@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skin Wax Glow">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" href="./icons/logo.svg">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/hamburgers.min.css">
+    <title>Skin Wax Glow</title>
+</head>
+<body>
+  <header class="main-head mobile">
+    <div class="logo mobile">
+        <img src="./img/logo.jpg" alt="logo">
+        <h1>Skin Wax Glow Studio</h1>
+    </div>
+    <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+</header>
+    <header class="main-head">
+        <nav>
+            <div class="logo main">
+                <img src="/img/logo.jpg" alt="logo">
+                <h1>Skin Wax Glow Studio</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./extra/gallery.html">Gallery</a></li>
+                <li><a href="./extra/reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main-section">
+    </section>
+    <section class="home-gallery" id="home*gallery">
+      <img class="home-gallery-one" src="./img/home-gallery-one.jpg" alt="">
+      <img class="home-gallery-two" src="./img/home-gallery-two.jpg" alt="">
+      <img class="home-gallery-three" src="./img/home-gallery-three.jpg" alt="">
+      <img class="home-gallery-four" src="./img/home-gallery-four.jpeg" alt="">
+    </section>
+    <section class="third-section">
+        <div class="main-text">
+            <h1>About Skin Wax Glow Studio</h1>
+        <p>
+            Specializing in full body waxing and skin care. Our goal is to make you feel as comfortable as possible while giving you the best service and at home skin care regimen at the same time. Skin Wax Glow Studio utilizes a unique blend of hard waxes which caters from the most sensitive skin type to those with thick coarse hair types.
+Skin Wax Glow Studio also uses the most natural ways and products as possible to deliver the most glow in a healthy natural way.
+        </p>
+        </div>
+        <div class="text-img">
+            <img src="./img/main-logo.jpg" alt="skin-wax-glow">
+        </div>
+    </section>
+    <div class="divider closed"></div>
+    <section class="main-map">
+        <h2>Our Location</h2>
+    <div class="google-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1631.5209102696558!2d-85.2405037!3d35.1306299!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88606019b5db29ab%3A0x27813ea334f06808!2sChic%20%26%20Sassy%20Hair%20Salon!5e0!3m2!1sen!2sus!4v1607668781906!5m2!1sen!2sus" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    </section>
+    <footer>
+        <h4>Skin Wax Glow Studio &copy; 2020 </h4>
+      <ul>
+          <li><a href="/index.html"><img src="./icons/home 1.svg" alt="home-link"></a></li>
+          <li><a href="https://www.facebook.com/skinwaxglow/"><img src="./icons/facebook.svg" alt="facebook-link"></a></li>
+          <li><a href="https://www.instagram.com/skinwaxglowstudio"><img src="./icons/instagram.svg" alt="instagram-link"></a></li>
+      </ul>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        function initMap() {
+          var location = { lat: 35.01682, lng: -85.19439 };
+          var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: location
+          });
+          var marker = new google.maps.Marker({
+            position: location,
+            map: map
+          });
+        }
+      </script>
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw9YYxUahLu55vKo5nMgZhdntChW7sIKI&callback=initMap"
+      ></script>
+</body>
+</html>
